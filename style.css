@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    
+    min-height: 100vh;
+}
+header{
+background-color: #FFFF00;
+display: flex;
+width: 100%;
+padding: 5px;
+position: fixed;
+}
+img{
+    width: 50px;
+}
+h3{
+    position:absolute;
+    left: 60px;
+    top: 20px;
+}
+.navbar ul{
+    display: flex;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+.navbar ul li{
+    margin-left: 15px;
+    font-size: 30px;
+}
+.navbar ul li a{
+    color:black;
+}
+.navbar ul li a.active{
+    color: black;
+}
+.navbar ul li a:hover{
+    color: #F0F ;
+}
+section{
+    min-height: 100vh;
+   
+}
+.main{
+    
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    display: flex;
+    background: url(images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .main h1{
+    padding: 8px;
+}
+.main p{
+    padding: 10px;
+    font-size: 18px;
+}
+.main button{
+   /* padding-left: 20px;
+   padding-right: 20px; */
+   padding: 10px;
+}
+.btn{
+    background-color: orange;
+border-radius: 10px;
+    width: 150px;
+    font-size: 20px;
+    padding: 15px;
+    border: none; 
+} 
+/* about styling */
+.about{
+    padding: 20px;
+}
+.about img{
+    width: 450px;
+    height: 450px;
+    float: right;
+    margin-right: 80px;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+.about p{
+    margin-top: 70px;
+    font-size: 35px;
+}
+.about a{
+    position: absolute;
+    left: 20%;
+}
+/* teachers styling */
+.images{
+    padding-top: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+   
+  
+}
+
+.images img{
+    width: 400px;
+    height: 400px;
+    padding: 3px;
+    border: 2px solid red;
+    border-radius: 10px;
+   
+}
+/* course styling */
+.course{
+    position: absolute;
+    top: 12%;
+}
+.course .container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+  
+}
+.course .container .box{
+    width: 360px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-left: 30px; 
+    margin: 10px;
+    /* position: absolute;
+    top: 15%; */
+   
+}
+.course .container .box img{
+    width: 360px;
+    height: 200px;
+    /* border-radius: 5px; */
+}
+.course .container .box .price{
+    float: right;
+    margin-right: 30px;
+    margin-top: -50px;
+    position: relative;
+    width: 100PX;
+    height: 100px;
+    background-color: #FFFF00;
+    border-radius: 120px;
+}
+.course .container .box .price h1{
+    float: right;
+    margin-right: 30px;
+    margin-top: 40px;
+    color: black;
+}
+
+.course .container .box .description {
+    font-size: 27px;
+    color:darkslategray;
+    margin-left: 10px; 
+    margin-top: 20px;
+   
+}
+.course .container .box .description a:hover{
+    text-decoration: underline;
+}
+.course .container .box  p{
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 4px;
+    padding-right: 5px;
+}
+.course .container .box hr{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.course .container .box .info{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding-top: 15px;
+}
+.course .container .box .info h2{
+   
+    padding: 10px;
+    font-size: 20px;
+}
+/* contact styling */
+.contact{
+    background-color: #111;
+
+}
+.contact .cinwaan{
+    padding-top: 70px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  
+   
+}
+.contact .row form{
+    flex: 1px;
+    background-color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:  1%;
+    padding: 2rem;
+}
+.contact .row form .box{
+    width: 49%;
+    background: none;
+    height: 55px;
+    border: 1px solid #eee;
+    color: white;
+    font-size: 30px;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+.contact .row form .address{
+    width: 100%;
+    height: 140px;
+}
+.contact .row form .send{
+    background-color: #FFFF00;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 45%;
+}
+.contact .row form .send:hover{
+    background-color: white;
+}
+.contact .row .image{
+    width: 700px;
+    height: 100%; 
+}
